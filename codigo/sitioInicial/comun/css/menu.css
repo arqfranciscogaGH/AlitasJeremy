@@ -1,0 +1,178 @@
+.colorFondo  { background-color: #000000;}
+.colorLogo  { background-color: #FF8000;}
+.colorFuente  { color: #EC8117;}
+*{
+    box-sizing: border-box; 
+    margin:0; 
+    padding: 0 0;
+
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+
+  
+}
+.sabores
+{
+    text-decoration: none;
+    list-style: none;
+}
+ /* ----------------------  MENU ---------------------------------  */
+ 
+ .menuNav
+ {
+     box-sizing: border-box;
+     position: absolute;
+     z-index: 1000;
+     transition: all .5s ;
+     -webkit-transition: all .5s ;
+     -moz-transition: all .5s ;
+     -ms-transition: all .5s ;
+ }
+.menuPrinBoton
+{
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 10px; 
+    width: 40px;
+    z-index: 2000;
+    display:none;
+}
+.menuPrinBoton i
+{
+    position: absolute;
+    font-size: 25px;
+    color:white;
+    filter: invert(0);
+}
+
+.menuPrin
+{
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 0;
+    margin : 0 0;
+    
+    display:flex;
+    flex-direction: row;
+
+    background-color: pink; 
+    /* float :right;  */
+    
+
+    align-items: center;
+    text-align: center;
+    transition: all .5s ;
+    -webkit-transition: all .5s ;
+    -moz-transition: all .5s ;
+    -ms-transition: all .5s ;
+/*    
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease; */
+
+    z-index: 3000;
+   
+}
+
+.menuPrinMostrar
+{
+
+    margin-left: -100%;
+    display: none;
+    /* transform: translateY(0);  */
+ 
+}
+
+.menuPrin li
+{   
+    margin : 0 0;
+  
+   /* display: block; */
+   min-width: 100px;
+   line-height: 25px;
+}
+.menuIten a
+{
+ 
+    text-decoration: none;
+    text-transform:uppercase;
+
+    margin : 0 0;
+    /* padding: 5px 20px; */
+    display: block;
+    border-radius: 3px;
+ 
+    font-size: 12px;
+    color: white; 
+}
+.menuIten a:hover {
+
+    background-color: rgba(0, 0, 0,.8);
+    border-bottom: 2px groove rgba(247, 231, 11, 0.9);
+/*     border-bottom: 1px groove #E6E6E6;    */
+}
+
+
+
+/* celular muy pequeño  */
+
+@media (max-width: 700px) {
+    .menuNav
+    {
+        left:15px;
+        top: 98px; 
+    }
+    .menuPrinBoton
+    {
+        display: block;
+    }
+    .menuPrin
+    {
+   
+        flex-direction: row;
+     }
+
+ 
+    
+}
+
+/*    tableta */
+@media (min-width:700px ) and (max-width: 1119px) {
+    .menuNav
+    {
+        left:50%;
+        top: 82px; 
+    }
+    .menuPrin
+    {
+       
+        
+    }
+}
+
+ /* medias  laptop  o  pc */
+@media  (min-width:1120px) and  (max-width: 2999px)
+{
+    .menuNav
+    {
+        left:50%;
+        top: 82px; 
+    }
+    .menuPrin
+    {
+        position: absolute;
+        
+    }
+
+}
+
+
+
+

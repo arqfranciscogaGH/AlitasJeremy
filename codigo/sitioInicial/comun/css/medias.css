@@ -1,0 +1,48 @@
+/* medias  de secciones  del tamaño mas chico al grande*/
+/* celular muy pequeño  */
+@media (max-width: 700px) {
+    .close   {
+        right: 60px;
+    }
+    /* .light-box img 
+    {
+        width: 60vh;
+        max-height: 70vh;
+    } */
+    .light-box:target 
+    {
+        transform: scale(1.2);
+    } 
+} 
+
+
+/* celular gdet o tableta   */
+@media  (min-width:700px ) and (max-width: 920px)    { 
+    .close   {
+        right: 80px;
+    }
+    /* .light-box img 
+    {
+        width: 80vh;
+        max-height: 90vh;
+    } */
+    .light-box:target 
+    {
+        transform: scale(1.2);
+    }
+}
+/* medias equio de computo laptop o patalla */
+@media  (min-width:920px ) and  (max-width: 1599px)    { 
+    .close   {
+        right: 120px;
+    }
+    /* .light-box img 
+    {
+        width: 90vh;
+        max-height: 100vh;
+    } */
+    .light-box:target 
+    {
+        transform: scale(1.2);
+    }
+}
